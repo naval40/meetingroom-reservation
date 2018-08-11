@@ -37,6 +37,9 @@ you can run on IDE or type below in console at project root path
 ./gradlew build
 java -jar build/libs/meetingroom-reservation-0.0.1-SNAPSHOT.jar
 ```
+##### after then you can access to main page ( [http://localhost:8080](http://localhost:8080) )
+##### there are two pages Add and List. 
+##### you can access that page to click the button
 
 ## 개선사항
 ##### spring boot와 tymeleaf 템플릿을 처음 사용하다보니 시간이 좀더 걸렸음.

@@ -31,10 +31,11 @@
  
 
 ## Run
-you can run on IDE or type below in console
+you can run on IDE or type below in console at project root path
 
 ```
-./gradlew build & java -jar build/libs/meetingroom-reservation-0.0.1-SNAPSHOT.jar
+./gradlew build
+java -jar build/libs/meetingroom-reservation-0.0.1-SNAPSHOT.jar
 ```
 
 ## 개선사항

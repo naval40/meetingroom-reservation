@@ -1,4 +1,4 @@
-## room-reservation
+# room-reservation
 ##### 제약조건에 맞게 회의실을 예약하고 볼수 있도록 한 어플리케이션 프로그램
 
 ## prerequisite
@@ -30,7 +30,7 @@
 ##### User/Room : 사용자/회의실 정보는 persistence 로 객채화 함.
  
 
-##Run
+## Run
 you can run on IDE or type below in console
 
 ```

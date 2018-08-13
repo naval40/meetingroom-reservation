@@ -16,6 +16,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Getter
@@ -53,8 +54,10 @@ public class Reservation {
     private Room room;
     
     @Transient
+    @Setter
     private int repeatCount;
     
     @Transient
+    @Setter
     private String repeat;
 }

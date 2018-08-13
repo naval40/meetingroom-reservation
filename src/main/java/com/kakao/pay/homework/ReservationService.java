@@ -24,12 +24,13 @@ public class ReservationService {
 	
 	public SimpleResponseJSON addReservation(final Reservation input) {
 		
-		this.validateReservation(input);
 		if (!"on".equals(input.getRepeat())) {
+			this.validateReservation(input);
 			reservationRepository.save(input);
 		} else {
 			IntStream.range(0, input.getRepeatCount()).forEach(index -> {
 				Reservation each = Reservation.of(input.getTitle(), input.getDate().plusWeeks(index), input.getStartTime(), input.getEndTime(), input.getUserId(), input.getRoomId());
+				this.validateReservation(each);
 				reservationRepository.save(each);
 			});
 		}
